@@ -1,0 +1,15 @@
+name: roadprint
+description: Your life, mapped. A personal driving journal.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  geolocator: ^13.0.2
+  shared_preferences: ^2.3.2
+flutter:
+  uses-material-design: true

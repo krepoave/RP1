@@ -1,0 +1,17 @@
+name: iOS compile check (unsigned)
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+jobs:
+  ios:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+      - name: Prepare iOS files
+        run: bash PREPARE_IOS_ON_MAC.sh
+      - name: Compile without signing
+        run: flutter build ios --release --no-codesign

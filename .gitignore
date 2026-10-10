@@ -1,0 +1,22 @@
+# Flutter temporary files
+.dart_tool/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Editor files
+.vscode/
+.idea/
+
+# Local machine files
+*.log
+*.tmp
+.DS_Store
+
+# Secrets and signing credentials
+.env
+.env.*
+*.p12
+*.mobileprovision
+*.keystore
+*.jks
